@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>My Guest Book</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	</head>
+
+<style type="text/css">
+	footer{
+        font-family: 'Libre Franklin', sans-serif;
+        background-color: grey;
+        color: white;
+	}
+	img{
+		width: 50%;
+		margin-left: 100px;
+	}
+	h2{
+		text-shadow: 2px 2px 3px #b8e994;
+	}
+	p{
+		font-family: monospace;
+	}
+	#form{
+		background-color: whitesmoke;
+		border-radius: 900px;
+		}
+	#awal{
+		background-color: whitesmoke;
+	}
+	.btn{
+		padding: 5px 20px;
+		background :none;
+		border-radius: 2px solid #131313;
+		color: #131313;
+		font-size: 20px;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+	a{
+		padding: 5px 20px;
+		background :none;
+		border-radius: 2px solid #131313;
+		color: #131313;
+		font-size: 20px;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+</style>
+	<body style="background-color: #079992;">
+		<div align="center"><strong><font size="6" face="Courier New, Courier, mono" ><h2>KETOPRAK JOGJA</h2></font></strong><p>Jl tegal sari, Banguntapan, Bantul</p></div><hr>
+		<div id="form">
+			<form name="form1" method="post" action="proses.php">
+				<table width="58%" border="0" align="center">
+					<tr>
+						<td>Nama Lengkap</td>
+						<td><input name="nama" type="text" id="nama"></td>
+					</tr>
+
+					<tr>
+						<td>Alamat</td>
+						<td><input name="alamat" type="text" id="alamat"></td>
+					</tr>
+
+					<tr>
+						<td>Kode pesanan dan Nama Makanan/Minuman</td>
+						<td><input name="kodepesanan" type="text" id="kodepesanan"></td> </tr>
+					</tr>
+
+					<tr>
+						<td>Rasa</td>
+						<td>
+							<select name="Rasa" id="Rasa">
+								<option>Pedas</option>
+								<option>Sedang</option>
+								<option>Tidak pedas</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>No antrian</td>
+						<td><input name="antrian" type="text" id="antrian"></td> </tr>
+					</tr>
+					<tr>
+						<td>Komentar atau saran untuk Toko kami</td>
+						<td><textarea name="komentar" id="komentar"></textarea></td> </textarea>
+					</tr><br><br>
+
+					<tr>
+						<td></td>
+						<td><input type="submit" name="Submit" value="Kirim" class="btn">
+
+							<input type="reset" name="Submit2" value="Batal" class="btn">
+					</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div align="center"><strong><a href="lihat.php" type="submit"><input type="submit" name="" value="Lihat Pesanan Pembeli" class="btn red">
+		</a></strong></div>
+		<br><br><br>
+
+		<div class="container">
+			<table border="3px" align="center" style="border: 2px solid black; background-color: whitesmoke;">
+				<tr>
+					
+					<td align="center" style="font-family: cursive;">
+						<b style="font-size: 50px;">kode</b>
+					</td>
+					<td align="center" style="font-family: cursive;"><b style="font-size: 50px;">Nama makanan<b></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" style="background-color:#f8c291;" >
+						<b style="font-size: 30px;">Makanan</b>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						1.ketoprak
+					</td>
+					<td>
+						<img src="ketoprakbiasa.jpg">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2.Ketoprak Telur
+					</td>
+					<td><img src="ketopraktelur.jpg"></td>
+				</tr>
+				<tr>
+					
+					<td>
+						3.Ketoprak Tahu
+					</td>
+					<td><img src="ketopraktahu.jpg"></td>
+				</tr>
+				<tr>
+					
+					<td>
+						4.Ketoprak Tahu Telur
+					</td>
+					<td><img src="ketopraktahutelur.jpg"></td>
+				</tr><br><br>
+				<tr>
+					<td colspan="2" align="center" style="background-color:#f8c291;" >
+						<b style="font-size: 30px;">Minuman</b>
+					</td>
+				</tr>
+				<tr>
+					
+					<td>
+						1.es teh
+					</td>
+					<td><img src="esteh.jpg"></td>
+				</tr>
+				<tr>
+					
+					<td>
+						2.Es jeruk
+					</td>
+					<td><img src="es jeruk.jpg"></td>
+				</tr>
+				<tr>
+					
+					<td>
+						3.Teh tarik es/biasa
+					</td>
+					<td><img src="teh tarik.jpg"></td>
+				</tr>
+				<tr>
+					
+					<td>
+						5.Es camur
+					</td>
+					<td><img src="es campur.jpg"></td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+  <p align="center">Copyright @ 2022</p>
+  <p align="center">By Bagus Viki Amalindo</p>
+</footer>
+	</body>
+</html>
